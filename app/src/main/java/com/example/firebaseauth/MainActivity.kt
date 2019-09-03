@@ -91,13 +91,13 @@ class MainActivity : AppCompatActivity() {
            /* var pic_url = SignUp().uri
             Glide.with(this@MainActivity).load(pic_url).into(profile_pic)*/
 
-           // if(currentUser.isEmailVerified){
+            if(currentUser.isEmailVerified){
 
                 startActivity(Intent(this,DashBoard::class.java))
                 finish()
-          /*  }else{
+            }else{
                 Toast.makeText(this, "Please verify your email address", Toast.LENGTH_SHORT).show()
-            }*/
+            }
 
         }else{
             Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
